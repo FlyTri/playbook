@@ -20,7 +20,7 @@ actions:
   - !taskKill: {name: "TextInputHost", errorAction: Ignore}
   - !taskKill: {name: "ShellExperienceHost", errorAction: Ignore}
   - !taskKill: {name: "backgroundTaskHost", errorAction: Ignore}
-  - !taskKill: {name: "Widgets", errorAction: Ignore}
+  # - !taskKill: {name: "Widgets", errorAction: Ignore}
 
   - !task: {path: 'Tasks\software.yml'}
   - !task: {path: 'Tasks\services.yml'}

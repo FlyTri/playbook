@@ -90,12 +90,12 @@ actions:
   - !registryValue: {path: 'HKU\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer', value: 'LinkResolveIgnoreLinkInfo', type: REG_DWORD, data: '1'}
 
 
-  # === Disable Taskbar Animations. (prevents the pop up windows in the taskbar from getting stuck too)
-  - !registryValue: {path: 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced', value: 'TaskbarAnimations', type: REG_DWORD, data: '0', option: 'configure-explorer-taskbar-animations'}
-  - !registryValue: {path: 'HKU\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced', value: 'TaskbarAnimations', type: REG_DWORD, data: '0', option: 'configure-explorer-taskbar-animations'}
+  # # === Disable Taskbar Animations. (prevents the pop up windows in the taskbar from getting stuck too)
+  # - !registryValue: {path: 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced', value: 'TaskbarAnimations', type: REG_DWORD, data: '0', option: 'configure-explorer-taskbar-animations'}
+  # - !registryValue: {path: 'HKU\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced', value: 'TaskbarAnimations', type: REG_DWORD, data: '0', option: 'configure-explorer-taskbar-animations'}
   
-  - !registryValue: { path: 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced', value: 'TaskbarAnimations', operation: delete, option: '!configure-explorer-taskbar-animations' }
-  - !registryValue: { path: 'HKU\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced', value: 'TaskbarAnimations', operation: delete, option: '!configure-explorer-taskbar-animations' }
+  # - !registryValue: { path: 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced', value: 'TaskbarAnimations', operation: delete, option: '!configure-explorer-taskbar-animations' }
+  # - !registryValue: { path: 'HKU\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced', value: 'TaskbarAnimations', operation: delete, option: '!configure-explorer-taskbar-animations' }
 
   # === Allow Windows Ink Workspace - Enabled (On, but disallow access above lock)
   # ------> https://admx.help/?Category=Windows_11_2022&Policy=Microsoft.Policies.WindowsInkWorkspace::AllowSuggestedAppsInWindowsInkWorkspace

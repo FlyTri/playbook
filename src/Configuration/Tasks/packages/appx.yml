@@ -10,13 +10,15 @@ actions:
     exeDir: true
     errorAction: Ignore
     weight: 48
+    # 'Microsoft.WindowsCamera'
+    # 'MicrosoftWindows.Client.WebExperience'
+    # 'Microsoft.WidgetsPlatformRuntime'
+    # 'SpotifyAB.SpotifyMusic'
+    # 'Microsoft.StartExperiencesApp'
     command: >-
       .\APPX-REMOVER.ps1 -Packages @(
         'Microsoft.Windows.SecureAssessmentBrowser',
         'Microsoft.Windows.PeopleExperienceHost',
-        'Microsoft.WindowsCamera',
-        'MicrosoftWindows.Client.WebExperience',
-        'Microsoft.WidgetsPlatformRuntime',
         'Microsoft.WindowsAlarms',
         'Microsoft.WindowsMaps',
         'Microsoft.MicrosoftStickyNotes',
@@ -49,13 +51,11 @@ actions:
         'Microsoft.Office.Word',
         'Microsoft.Office.OneNote',
         'Microsoft.OutlookForWindows',
-        'SpotifyAB.SpotifyMusic',
         'OutlookPWA',
         'Microsoft.Microsoft3DViewer',
         'Microsoft.Advertising',
         'MixedReality.Portal',
         'Microsoft.MSPaint', # Paint 3D
-        'Microsoft.StartExperiencesApp'
       )
 
   - !writeStatus: {status: "Removing Photos"}

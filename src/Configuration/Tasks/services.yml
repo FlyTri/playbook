@@ -59,9 +59,9 @@ actions:
   #===== Tcpipreg (experimental)
   - !service: {name: 'tcpipreg', operation: change, startup: 4}
 
-  # === EdgeUpdate - Manual 
-  # ------> Disabling it breaks WebView installation via Visual Studio)
-  - !service: {name: 'edgeupdate', operation: change, startup: 3}
+  # # === EdgeUpdate - Manual 
+  # # ------> Disabling it breaks WebView installation via Visual Studio)
+  # - !service: {name: 'edgeupdate', operation: change, startup: 3}
 
   # == Windows Event Collector - Disabled
   - !service: {name: 'Wecsvc', operation: change, startup: 4} 
